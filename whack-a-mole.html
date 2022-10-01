@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whack-A-Mole</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bungee Spice|Space Grotesk">
+    <link rel="stylesheet" href="style.css">
+<body>
+    <div id="time" class="card">
+        <div class="card-title" id="time-title">Time:</div>
+        <hr>
+        <div class="card-text" id="time-text">02:00</div>
+    </div>
+    <div id="score" class="card">
+        <div class="card-title" id="score-title">Score:</div>
+        <hr>
+        <div class="card-text" id="score-count">0</div>
+    </div>
+    <div id="outerbox">
+        <h1 id="title">Whack-A-Mole</h1>
+        <div id="game">
+            <div class="row">
+                <div class="cell">
+                    <div class="hole"></div>
+                    <div class="mole" id="mole0">
+                        <img src="mole.png" height="80px" width="80px">
+                    </div>
+                </div>
+                <div class="cell">
+                    <div class="hole"></div>
+                    <div class="mole" id="mole1">
+                        <img src="mole.png" height="80px" width="80px">
+                    </div>
+                </div>
+                <div class="cell">
+                    <div class="hole"></div>
+                    <div class="mole" id="mole2">
+                        <img src="mole.png" height="80px" width="80px">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="cell">
+                    <div class="hole"></div>
+                    <div class="mole" id="mole3">
+                        <img src="mole.png" height="80px" width="80px">
+                    </div>
+                </div>
+                <div class="cell">
+                    <div class="hole"></div>
+                    <div class="mole" id="mole4">
+                        <img src="mole.png" height="80px" width="80px">
+                    </div>
+                </div>
+                <div class="cell">
+                    <div class="hole"></div>
+                    <div class="mole" id="mole5">
+                        <img src="mole.png" height="80px" width="80px">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="cell">
+                    <div class="hole"></div>
+                    <div class="mole" id="mole6">
+                        <img src="mole.png" height="80px" width="80px">
+                    </div>
+                </div>
+                <div class="cell">
+                    <div class="hole"></div>
+                    <div class="mole" id="mole7">
+                        <img src="mole.png" height="80px" width="80px">
+                    </div>
+                </div>
+                <div class="cell">
+                    <div class="hole"></div>
+                    <div class="mole" id="mole8">
+                        <img src="mole.png" height="80px" width="80px">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="buttons">
+            <button id="start" class="btn btn-primary">Start!</button>
+            <button id="reset" class="btn btn-primary">Reset!</button>
+        </div>
+    </div>
+    <script src="game.js"></script>
+    </head>
+</body>
+<!--Mole image ref: https://www.cleanpng.com/png-pull-up-mole-fat-mole-cartoon-animation-2043565/-->
+<!--Grass image ref: istockphoto.com-->
+</html>

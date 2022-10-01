@@ -1,0 +1,123 @@
+body{
+    background-color: #f2e8cf;
+}
+hr{
+    color: #f08080;
+}
+#game{
+    width: 500px;
+    height:450px;
+    border: 2px;
+    position: fixed;
+    top:100px;
+    left: 500px;
+    border-color: bisque;
+    background-image: url(grass.jpg);
+    background-repeat: repeat-x repeat-y;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    border-radius: 5%;
+    perspective: 200px;
+    justify-content: center;
+    align-items: center;
+    cursor: cell;
+}
+.cell{
+    width: 150px;
+    height:150px;
+    position: relative;
+    margin-right: 20px;
+}
+.row{
+    display: flex;
+    justify-content: space-evenly;
+}
+.hole{
+    width: 150px;
+    height:150px;
+    border: 2px;
+    border-color: rgb(96, 81, 63);
+    background-color: #7f5539;
+    border-radius: 50%  ;
+    transform-style: preserve-3d;
+    transform: rotateX(75deg);
+    box-shadow:0 3px 6px;
+}
+.mole{
+    position: absolute;
+    left:45px;
+    top:15px;
+    z-index: -1;
+    visibility: hidden;
+    animation-name: bounce;
+    animation-duration: 2s;
+}
+.card-title{
+    font-family: Century Gothic;
+    font-size: 20px;
+    font-weight: bold;
+}
+.card-text{
+    font-family: Copperplate;
+    font-size: 20px;
+}
+#outerbox{
+    width: 600px;
+    height:700px;
+    position: fixed;
+    top:10px;
+    left: 450px;
+    border-radius: 10%;
+}
+#title{
+    font-family: Bungee Spice;
+    position: fixed;
+    top:35px;
+    left: 590px;
+    animation: rubberBand;
+    animation-duration: 3s;
+}
+#buttons{
+    position: fixed;
+    top: 615px;
+    left: 600px;
+    
+}
+#start,#reset{
+    font-family: Space Grotesk;
+    border-radius: 20%;
+    border-width: 0px;
+    box-shadow: 0 2px 4px;
+    background-color: #6a994e;
+    margin-left: 50px;
+}
+#score{
+    background-color: beige;;
+    width: 100px;
+    text-align: center;
+    position: fixed;
+    top: 20px;
+    left: 1350px;
+    
+}
+#time{
+    text-align: center;
+    background-color: beige;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    width: 100px;
+}
+
+.moleAni
+{
+    position: absolute;
+    left:45px;
+    top:15px;
+    z-index: 1;
+    visibility: visible;
+    animation-name: bounce;
+    animation-duration: 1s;
+}
+.animate__animated.animate__bounce{
+    --animate-duration: 0.45s;
+}
